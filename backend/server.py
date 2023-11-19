@@ -2,7 +2,7 @@ from flask import Flask
 
 api = Flask(__name__)
 
-@api.route('/profile', methods=['GET'])
+@api.route('/api/profile', methods=['GET'])
 def profile():
     aboutMe = {
         "name": "Stephen Keane",
