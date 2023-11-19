@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios'
+import style from './styles/app.module.css'
 
 export default function App() {
   const [profile, setProfile] = useState({})
@@ -15,9 +16,9 @@ export default function App() {
   }
 
   return (
-    <>
+    <div className={style.app}>
       <h3>hello Flask / React!</h3>
-      <button onClick={getProfile}>get profile</button>
+      <button onClick={getProfile} style={{color:'white', backgroundColor:'#5c5a5e'}}>get profile</button>
       {profile &&
         <>
           <p>{profile.name}</p>
@@ -25,6 +26,6 @@ export default function App() {
         </>
 
       }
-    </>
+    </div>
   )
 }

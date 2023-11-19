@@ -1,0 +1,10 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background-color: #ebebeb;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    margin: 5rem auto;
+    padding: 1rem;
+}
