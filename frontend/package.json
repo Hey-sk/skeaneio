@@ -8,8 +8,8 @@
     "dev-back": "cd backend && env/bin/flask run --no-debugger",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview --port 8080",
-    "serve": "npm run build && vite preview"
+    "preview": "vite preview",
+    "serve": "npm run build && vite preview --port 8080"
   },
   "dependencies": {
     "axios": "^1.6.2",
